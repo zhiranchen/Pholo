@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pholo Homepage</title>
+		<meta name="viewport" content="width=device_width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		<div>
+			<!-- Navigation bar, search column and logo -->
+			<nav class="navbar" role="navigation">
+				<!-- Brand logo and toggle get grouped -->
+				<div class="navbar-logo">
+					<a href="index.html">
+						<button>Pholo Homepage</button>
+					</a>
+				</div>
+
+				<!-- Seach bar -->
+				<div class="search-bar">
+					<form class="navbar-form" role="search">
+					<div class="input-group">
+						<input type="text" class="form" placeholder="Search" name="q">
+						<div class="search-submit-button">
+							<a href="searchResult.html">
+							</a>
+						</div>
+					</div>
+					</form>
+				</div>
+				<a href="searchResult.html">
+					<button>Submit Search</button>
+				</a>
+
+				<!-- Add new location button -->
+				<div class="add-location-button">
+					<a href="addLocation.html">
+						<button>Add New Location</button>
+					</a>
+				</div>
+			</nav>
+		</div>
+		<div>
+			<h1>Add Location</h1>
+		</div>
+
+		<!-- Submit Forms -->
+		<div>
+			<form action="addLocation_form.asp">
+			Name: <input type="text" name="FirstName" value="La Jolla Cove"><br>
+			Location pin: <input type="text" name="LastName" value="Coast Blvd S, La Jolla, CA 92037"><br>
+			<input type="submit" value="Submit">
+			</form>
+		</div>
+
+		<!-- Submit Image-->
+		<div>
+			<a href="addPhoto.html">
+				<button>Submit an Image</button>
+			</a>
+		</div>
+
+		<!-- Cancel Submition -->
+		<div>
+			<a href="index.html">
+				<button>Cancel Submission & Go to Homepage</button>
+			</a>
+		</div>
+
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
