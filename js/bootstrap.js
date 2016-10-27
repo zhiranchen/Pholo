@@ -4,6 +4,12 @@
  * Licensed under the MIT license
  */
 
+
+
+
+
+
+
 if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
 }
