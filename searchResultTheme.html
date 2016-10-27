@@ -1,179 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Pholo Homepage</title>
-		<!-- Bootstrap -->
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    
+
+    <title>Pholo Search Results</title>
+
+    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	</head>
-	<body>
-		<div>
-		<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/index.html">Pholo</a>
-    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Go!</button>
-        </form>    
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Submit <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Location</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Photo to Location</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Account</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">About</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Logout</a></li>
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"
+    type="text/css">
+    <link href=
+    'https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+    <link href=
+    'https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+    rel='stylesheet' type='text/css'>
+</head>
 
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-		</div>
-
-		
-			<!-- showing what the user is current seraching -->
-			<div class="search-result">
-				<h1>Showing Results for "portrait"</h1>
-                <br>
-			</div>
-
-			<!-- Showing result by what order, filter options -->
-		<div class="row">	
+<body>
+    <div>
+        <nav class="navbar navbar-default">
             <div class="container-fluid">
-            <div class="col-sm-6">
-                <div class="btn-group">
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Sort by: <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#distanceFunction">Distance</a></li>
-    <li><a href="#relevanceFunction">Relevance</a></li> 
-    <li><a href="#ratingFunction">Rating</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">I'm Feeling Lucky</a></li>
-  </ul>
-                </div>
-            </div>    
-            <div class="container-fluid">
-            <div class="col-sm-6">   
-                <div class="btn-group">
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    View Mode: <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-    <li><a href="#distanceFunction">Module View</a></li>
-    <li><a href="#relevanceFunction">Map View</a></li>
-    <li role="separator" class="divider"></li>
-    <li><a href="#">Hybrid</a></li>
-  </ul>
-                </div>
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button aria-expanded="false" class=
+                    "navbar-toggle collapsed" data-target=
+                    "#bs-example-navbar-collapse-1" data-toggle="collapse"
+                    type="button"><span class="sr-only">Toggle
+                    navigation</span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> <span class=
+                    "icon-bar"></span></button> <a class="navbar-brand" href=
+                    "/index.html">Pholo</a>
                 </div>
             </div>
-        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button class="navbar-toggle collapsed" data-target=
+                        "#bs-example-navbar-collapse-1" data-toggle="collapse"
+                        type="button"><span class="sr-only">Toggle
+                        navigation</span> Menu <i class=
+                        "fa fa-bars"></i></button> <a class=
+                        "navbar-brand page-scroll" href="/index.html"><img src=
+                        "img/P.png"></a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id=
+                    "bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <form class="navbar-form" id="search" name=
+                                "search" role="search">
+                                    <div class="form-group">
+                                        <input class="form-control"
+                                        placeholder="Where to?" type="text">
+                                    </div><button class="btn btn-default" type=
+                                    "submit">Search</button>
+                                </form>
+                            </li>
+                            <li>
+                                <a aria-expanded="false" aria-haspopup="true"
+                                class="dropdown-toggle" data-toggle="dropdown"
+                                href="#" role="button">Submit<span class=
+                                "caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">New Location</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">New Photo</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a aria-expanded="false" aria-haspopup="true"
+                                class="dropdown-toggle" data-toggle="dropdown"
+                                href="#" role="button">Settings <span class=
+                                "caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Account</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Help</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="#">Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </nav>
+    </div><!-- /.container-fluid -->
+    <!-- showing what the user is current seraching -->
+    <br>
+    <div class="search-result">
+        <center>
+            <h1>Showing Results for: "portrait"</h1>
+        </center><br>
+    </div><!-- Showing result by what order, filter options -->
+    <center>
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col-sm-6">
+                    <div class="btn-group">
+                        <button aria-expanded="false" aria-haspopup="true"
+                        class="btn btn-default dropdown-toggle custom"
+                        data-toggle="dropdown" type="button">Sort By:
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#relevanceFunction">Relevance</a>
+                            </li>
+                            <li>
+                                <a href="#ratingFunction">Rating</a>
+                            </li>
+                            <li>
+                                <a href="#distanceFunction">Distance</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="col-sm-6">
+                        <div class="btn-group">
+                            <button aria-expanded="false" aria-haspopup="true"
+                            class="btn btn-default dropdown-toggle custom"
+                            data-toggle="dropdown" type="button">View Mode:
+                            <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#distanceFunction">Grid View</a>
+                                </li>
+                                <li>
+                                    <a href="#relevanceFunction">Map View</a>
+                                </li>
+                                <li class="divider" role="separator"></li>
+                                <li>
+                                    <a href="#hybridFunction">Hybrid View</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-			
-		
-    <div class="container-fluid" id="searchResults">
-
-		<!--show location view with descrption of rating and distance -->
-    <div class="container-fluid">   
-		<div class = "row">
-			<!-- Location #1-->
-			<div class = "col-sm-6">
-				<!-- Location's image -->
-				<div>
-				<a href="searchResult.html">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/b/be/JPEG_example_image.jpg"/>
-				</a>
+    </center><br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#"><img alt="" class=
+                "img-responsive" src="img/1.jpg"></a>
+                <div>
+                    <center>
+                        <p><b>Potato Chip</b><br>
+                        <b>Rating:</b> 4.6 Stars<br>
+                        <b>Distance:</b> 3.2 miles</p>
+                    </center>
                 </div>
-				<!-- Location's rating and distance -->
-				<div>
-					<p>Location #1</p>
-					<p>Rating: 4.6/5</p>
-					<p>Distance:3.2 miles</p>
-				</div>
-			</div>
-
-			<!-- Location #2-->
-			<div class = "col-sm-6">
-				<!-- Location's image -->
-				<div>
-				<a href="searchResult.html">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/b/be/JPEG_example_image.jpg"/>
-				</a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#"><img alt="" class=
+                "img-responsive" src="img/2.jpg"></a>
+                <div>
+                    <center>
+                        <p><b>Black's Beach</b><br>
+                        <b>Rating:</b> 4.6 Stars<br>
+                        <b>Distance:</b> 3.2 miles</p>
+                    </center>
                 </div>
-				<!-- Location's rating and distance -->
-				<div>
-					<p>Location #2</p>
-					<p>Rating: 4.5/5</p>
-					<p>Distance: 3.5 miles</p>
-				</div>
-			</div>
-		</div>
-    <div class="row">
-        <!-- location 3-->
-        <div class = "col-sm-6">
-				<!-- Location's image -->
-				<div>
-				<a href="searchResult.html">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/b/be/JPEG_example_image.jpg"/>
-				</a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#"><img alt="" class=
+                "img-responsive" src="img/3.jpg"></a>
+                <div>
+                    <center>
+                        <p><b>Scripps Institute of Oceanography</b><br>
+                        <b>Rating:</b> 4.6 Stars<br>
+                        <b>Distance:</b> 3.2 miles</p>
+                    </center>
                 </div>
-				<!-- Location's rating and distance -->
-				<div>
-					<p>Location #3</p>
-					<p>Rating: 4.1/5</p>
-					<p>Distance: 5 miles</p>
-				</div>
-			</div>
-        <!-- location 4-->
-        <div class = "col-sm-6">
-				<!-- Location's image -->
-				<div>
-				<a href="searchResult.html">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/b/be/JPEG_example_image.jpg"/>
-				</a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#"><img alt="" class=
+                "img-responsive" src="img/4.jpg"></a>
+                <div>
+                    <center>
+                        <p><b>Birch Aquarium</b><br>
+                        <b>Rating:</b> 4.6 Stars<br>
+                        <b>Distance:</b> 3.2 miles</p>
+                    </center>
                 </div>
-				<!-- Location's rating and distance -->
-				<div>
-					<p>Location #4</p>
-					<p>Rating: 3.5/5</p>
-					<p>Distance: 9.4 miles</p>
-				</div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#"><img alt="" class=
+                "img-responsive" src="img/5.jpg"></a>
+                <div>
+                    <center>
+                        <p><b>Liberty Public Market</b><br>
+                        <b>Rating:</b> 4.6 Stars<br>
+                        <b>Distance:</b> 3.2 miles</p>
+                    </center>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#"><img alt="" class=
+                "img-responsive" src="img/6.jpg"></a>
+                <div>
+                    <center>
+                        <p><b>Birch Aquarium</b><br>
+                        <b>Rating:</b> 4.6 Stars<br>
+                        <b>Distance:</b> 3.2 miles</p>
+                    </center>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#"><img alt="" class=
+                "img-responsive" src="img/7.jpg"></a>
+                <div>
+                    <center>
+                        <p><b>Rady School of Management</b><br>
+                        <b>Rating:</b> 4.6 Stars<br>
+                        <b>Distance:</b> 3.2 miles</p>
+                    </center>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#"><img alt="" class=
+                "img-responsive" src="img/8.jpg"></a>
+                <div>
+                    <center>
+                        <p><b>Black's Beach</b><br>
+                        <b>Rating:</b> 4.6 Stars<br>
+                        <b>Distance:</b> 3.2 miles</p>
+                    </center>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#"><img alt="" class=
+                "img-responsive" src="img/9.jpg"></a>
+                <div>
+                    <center>
+                        <p><b>MCASD</b><br>
+                        <b>Rating:</b> 4.6 Stars<br>
+                        <b>Distance:</b> 3.2 miles</p>
+                    </center>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#"><img alt="" class=
+                "img-responsive" src="img/10.jpg"></a>
+                <div>
+                    <center>
+                        <p><b>Liberty Public Market</b><br>
+                        <b>Rating:</b> 4.6 Stars<br>
+                        <b>Distance:</b> 3.2 miles</p>
+                    </center>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#"><img alt="" class=
+                "img-responsive" src="img/11.jpg"></a>
+                <div>
+                    <center>
+                        <p><b>Geisel Library</b><br>
+                        <b>Rating:</b> 4.6 Stars<br>
+                        <b>Distance:</b> 3.2 miles</p>
+                    </center>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#"><img alt="" class=
+                "img-responsive" src="img/12.jpg"></a>
+                <div>
+                    <center>
+                        <p><b>Twin Peaks</b><br>
+                        <b>Rating:</b> 4.6 Stars<br>
+                        <b>Distance:</b> 3.2 miles</p>
+                    </center>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>   
-        </div>
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-	</body>
+    </div><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+     
+    <script src="js/bootstrap.min.js">
+    </script>
+</body>
 </html>
