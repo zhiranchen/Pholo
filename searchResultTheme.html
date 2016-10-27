@@ -1,111 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Pholo Homepage</title>
-		<meta name="viewport" content="width=device_width, initial-scale=1.0">
 		<!-- Bootstrap -->
-		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<div>
-			<!-- Navigation bar, search column and logo -->
-			<nav class="navbar" role="navigation">
-				<!-- Brand logo and toggle get grouped -->
-				<div class="navbar-logo">
-					<a href="index.html">
-						<button>Pholo Homepage</button>
-					</a>
-				</div>
+		<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Pholo</a>
+    </div>
 
-				<!-- Seach bar -->
-				<div class="search-bar">
-					<form class="navbar-form" role="search">
-					<div class="input-group">
-						<input type="text" class="form" placeholder="Search" name="q">
-						<div class="search-submit-button">
-							<a href="searchResult.html">
-							</a>
-						</div>
-					</div>
-					</form>
-				</div>
-				<a href="searchResult.html">
-					<button>Submit Search by Specific Name</button>
-				</a>
-				<a href="searchResultTheme.html">
-					<button>Submit Search by Theme</button>
-				</a>
-
-
-				<!-- Add new location button -->
-				<div class="add-location-button">
-					<a href="addLocation.html">
-						<button>Add New Location</button>
-					</a>
-				</div>
-			</nav>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 		</div>
 
-		<div>
+		
 			<!-- showing what the user is current seraching -->
 			<div class="search-result">
 				<h1>Showing Results for "portrait"</h1>
+                <br>
 			</div>
 
 			<!-- Showing result by what order, filter options -->
-			<div>
-				<p>Sort By:</p>
-					<ul>
-						<ul>Relevance</ul>
-						<ul>Rating</ul>
-						<ul>Distance</ul>
-					</ul>
-			</div>
-			<!-- Giving user view option -->		
-			<div>
-				<p> View Mode:</p>
-					<ul>
-						<ul>List View</ul>
-						<ul>Map View</ul>
-					</ul>
-			</div>
-		</div>
+		<div class="row">	
+            <div class="container-fluid">
+            <div class="col-sm-6">
+                <div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Sort by: <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#distanceFunction">Distance</a></li>
+    <li><a href="#relevanceFunction">Relevance</a></li> 
+    <li><a href="#ratingFunction">Rating</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">I'm Feeling Lucky</a></li>
+  </ul>
+                </div>
+            </div>    
+            <div class="container-fluid">
+            <div class="col-sm-6">   
+                <div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    View Mode: <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#distanceFunction">Module View</a></li>
+    <li><a href="#relevanceFunction">Map View</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Hybrid</a></li>
+  </ul>
+                </div>
+                </div>
+            </div>
+        
+        </div>
+			
+		
+    <div class="container-fluid" id="searchResults">
 
 		<!--show location view with descrption of rating and distance -->
-		<div>
+    <div class="container-fluid">   
+		<div class = "row">
 			<!-- Location #1-->
-			<div>
+			<div class = "col-sm-6">
 				<!-- Location's image -->
 				<div>
 				<a href="searchResult.html">
 					<img src="https://upload.wikimedia.org/wikipedia/commons/b/be/JPEG_example_image.jpg"/>
 				</a>
-				<div>
+                </div>
 				<!-- Location's rating and distance -->
 				<div>
 					<p>Location #1</p>
-					<p>Rating:</p>
-					<p>Distance:</p>
+					<p>Rating: 4.6/5</p>
+					<p>Distance:3.2 miles</p>
 				</div>
 			</div>
 
 			<!-- Location #2-->
-			<div>
+			<div class = "col-sm-6">
 				<!-- Location's image -->
 				<div>
 				<a href="searchResult.html">
 					<img src="https://upload.wikimedia.org/wikipedia/commons/b/be/JPEG_example_image.jpg"/>
 				</a>
-				<div>
+                </div>
 				<!-- Location's rating and distance -->
 				<div>
 					<p>Location #2</p>
-					<p>Rating:</p>
-					<p>Distance:</p>
+					<p>Rating: 4.5/5</p>
+					<p>Distance: 3.5 miles</p>
 				</div>
 			</div>
 		</div>
-		<script src="http://code.jquery.com/jquery.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+    <div class="row">
+        <!-- location 3-->
+        <div class = "col-sm-6">
+				<!-- Location's image -->
+				<div>
+				<a href="searchResult.html">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/b/be/JPEG_example_image.jpg"/>
+				</a>
+                </div>
+				<!-- Location's rating and distance -->
+				<div>
+					<p>Location #3</p>
+					<p>Rating: 4.1/5</p>
+					<p>Distance: 5 miles</p>
+				</div>
+			</div>
+        <!-- location 4-->
+        <div class = "col-sm-6">
+				<!-- Location's image -->
+				<div>
+				<a href="searchResult.html">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/b/be/JPEG_example_image.jpg"/>
+				</a>
+                </div>
+				<!-- Location's rating and distance -->
+				<div>
+					<p>Location #4</p>
+					<p>Rating: 3.5/5</p>
+					<p>Distance: 9.4 miles</p>
+				</div>
+        </div>
+    </div>
+    </div>   
+        </div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
