@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     
 
-    <title>Pholo Search Results</title>
+    <title>Pholo</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +48,7 @@
                         type="button"><span class="sr-only">Toggle
                         navigation</span> Menu <i class=
                         "fa fa-bars"></i></button> <a class=
-                        "navbar-brand page-scroll" href="/index.html"><img src=
+                        "navbar-brand page-scroll" href="index.html"><img src=
                         "img/P.png"></a>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -56,13 +56,19 @@
                     "bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <form class="navbar-form" id="search" name=
+                                <form class="navbar-form" name=
                                 "search" role="search">
                                     <div class="form-group">
-                                        <input class="form-control"
-                                        placeholder="Where to?" type="text">
-                                    </div><button class="btn btn-default" type=
-                                    "submit">Search</button>
+                                        <input type="text" type="submit" id="search" class="form-control" 
+                                        placeholder="Where to?">
+
+                                        <!--<button type="submit" class="btn btn-default" id="searchButton">Search</button>-->
+
+                                        <a id="searchButton" href="searchResultTheme.html" 
+                                        class="btn btn-default" role="button">Search</a>
+
+
+                                    </div>
                                 </form>
                             </li>
                             <li>
@@ -72,10 +78,10 @@
                                 "caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="#">New Location</a>
+                                        <a href="addLocation.html">New Location</a>
                                     </li>
                                     <li>
-                                        <a href="#">New Photo</a>
+                                        <a href="addPhoto.html">New Photo</a>
                                     </li>
                                 </ul>
                             </li>
@@ -86,22 +92,19 @@
                                 "caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="#">Account</a>
+                                        <a href="account.html">Account</a>
                                     </li>
                                     <li>
-                                        <a href="#">Help</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">About</a>
+                                        <a href="help.html">Help</a>
                                     </li>
                                     <li class="divider" role="separator"></li>
                                     <li>
-                                        <a href="#">Logout</a>
+                                        <a href="index.html">Logout</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">About</a>
+                                <a href="about.html">About</a>
                             </li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -109,6 +112,8 @@
             </nav>
         </nav>
     </div><!-- /.container-fluid -->
+
+    
 
 
 
