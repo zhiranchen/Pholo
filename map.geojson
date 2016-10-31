@@ -3,90 +3,100 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {},
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.24157154560089,
-          32.8868761409173
+          -117.2414815868251,
+          32.88687951947169
         ]
+      },
+      "properties": {
+        "name": "Rady School of Management",
+        "description": ""
       }
     },
     {
       "type": "Feature",
-      "properties": {},
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.25679576396942,
-          32.85851427055133
+          -117.2517839516513,
+          32.88530404668995
         ]
+      },
+      "properties": {
+        "name": "Ho Chi Minh Trail",
+        "description": ""
       }
     },
     {
       "type": "Feature",
-      "properties": {},
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.25123286247253,
-          32.87793828755685
+          -117.25122171454132,
+          32.876817766294245
         ]
+      },
+      "properties": {
+        "name": "Black's Beach",
+        "description": ""
       }
     },
     {
       "type": "Feature",
-      "properties": {},
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.25394189357758,
-          32.86611587138127
+          -117.25415904773399,
+          32.86567669720857
         ]
+      },
+      "properties": {
+        "name": "Scripps Institute of Oceanography",
+        "description": ""
       }
     },
     {
       "type": "Feature",
-      "properties": {},
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.2545051574707,
-          32.86279954473283
+          -117.24754729773849,
+          32.864590232663474
         ]
+      },
+      "properties": {
+        "name": "Birch Aquarium",
+        "description": ""
       }
     },
     {
       "type": "Feature",
-      "properties": {},
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.24777281284332,
-          32.86461768210433
+          -117.23756948020309,
+          32.88089854533763
         ]
+      },
+      "properties": {
+        "name": "Geisel Library",
+        "description": ""
       }
     },
     {
       "type": "Feature",
-      "properties": {},
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -117.25172638893127,
-          32.885062964821266
+          -117.25633895024657,
+          32.85856383852346
         ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -117.23755627870558,
-          32.880772009014215
-        ]
+      },
+      "properties": {
+        "name": "La Jolla Shores",
+        "description": ""
       }
     }
   ]
