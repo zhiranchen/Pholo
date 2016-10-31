@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    
+    <link href="favicon.ico" rel="icon">
+
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -19,7 +20,6 @@
         padding: 0;
       }
     </style>
-
 
     <title>Pholo</title>
 
@@ -41,6 +41,7 @@
     <div>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
+
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button aria-expanded="false" class=
@@ -53,9 +54,11 @@
                     "/index.html">Pholo</a>
                 </div>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
                 <div class="container-fluid">
+
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
                         <button class="navbar-toggle collapsed" data-target=
@@ -66,23 +69,21 @@
                         "navbar-brand page-scroll" href="index.html"><img src=
                         "img/P.png"></a>
                     </div>
+
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id=
                     "bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <form class="navbar-form" name=
+                                <form class="navbar-form" id="search" name=
                                 "search" role="search">
                                     <div class="form-group">
-                                        <input type="text" type="submit" id="search" class="form-control" 
-                                        placeholder="Where to?">
-
+                                        <input class="form-control" id="search"
+                                        placeholder="Where to?" type="text"> 
                                         <!--<button type="submit" class="btn btn-default" id="searchButton">Search</button>-->
-
-                                        <a id="searchButton" href="searchResultTheme.html" 
-                                        class="btn btn-default" role="button">Search</a>
-
-
+                                         <a class="btn btn-default" href=
+                                        "searchResultTheme.html" id=
+                                        "searchButton" role="button">Search</a>
                                     </div>
                                 </form>
                             </li>
@@ -93,7 +94,8 @@
                                 "caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="addLocation.html">New Location</a>
+                                        <a href="addLocation.html">New
+                                        Location</a>
                                     </li>
                                     <li>
                                         <a href="addPhoto.html">New Photo</a>
@@ -128,9 +130,7 @@
         </nav>
     </div><!-- /.container-fluid -->
 
-
-
-
+    <!-- END HEADER -->
 
 
     <!-- showing what the user is current seraching -->
@@ -138,10 +138,10 @@
     <div class="search-result">
         <center>
             <h1>Showing Results for: "portrait"</h1>
-        </center><br>
-    </div>
+        </center>
+        <br>
+    </div><!-- Showing result by what order, filter options -->
 
-    <!-- Showing result by what order, filter options -->
     <center>
         <div class="row">
             <div class="container-fluid">
@@ -164,6 +164,7 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="container-fluid">
                     <div class="col-sm-6">
                         <div class="btn-group">
@@ -173,10 +174,12 @@
                             <span class="caret"></span></button>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="searchResultTheme.html">Grid View</a>
+                                    <a href="searchResultTheme.html">Grid
+                                    View</a>
                                 </li>
                                 <li>
-                                    <a href="searchResultThemeMap.html">Map View</a>
+                                    <a href="searchResultThemeMap.html">Map
+                                    View</a>
                                 </li>
                                 <li class="divider" role="separator"></li>
                                 <li>
@@ -188,12 +191,12 @@
                 </div>
             </div>
         </div>
-    </center><br>
+    </center>
     <br>
     <br>
     <br>
-    
-    <body>
+    <br>
+
     <div id="map"></div>
     <center>
         <script>
@@ -203,11 +206,16 @@
           // locate you.
 
           function initMap() {
+            var infowindow = new google.maps.InfoWindow();
             var map = new google.maps.Map(document.getElementById('map'), {
               center: {lat: 39.828200, lng: -98.579500},
               zoom: 5
             });
             var infoWindow = new google.maps.InfoWindow({map: map});
+
+            google.maps.event.addListener(map, 'click', function() {
+              infowindow.close();
+            });
 
             // Try HTML5 geolocation.
             if (navigator.geolocation) {
@@ -220,7 +228,20 @@
                 infoWindow.setPosition(pos);
                 infoWindow.setContent('You are here.');
                 map.setCenter(pos);
-                map.setZoom(12);
+                map.setZoom(13);
+
+                <!-- https://gist.github.com/m-chuang/b65045add0fbf8e537b654a7d383940f -->
+                map.data.loadGeoJson('https://gist.githubusercontent.com/m-chuang/b65045add0fbf8e537b654a7d383940f/raw/6f708ff8ba881818982160812083e12fc3f9fc0d/map.geojson');
+
+                 map.data.addListener('click', function(event) {
+                   infowindow.setContent(event.feature.getProperty('name')+"<br>"+event.feature.getProperty('description'));
+                   infowindow.setPosition(event.latLng);
+                   infowindow.setOptions({pixelOffset: new google.maps.Size(0,-34)});
+                   infowindow.open(map);
+                });
+
+                google.maps.event.addDomListener(window, 'load', initialize);
+
               }, function() {
                 handleLocationError(true, infoWindow, map.getCenter());
               });
@@ -238,60 +259,46 @@
           }
         </script>
     </center>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCR_3sYLANIJJ0IlZSAMp-a9PYWbCCCadg&callback=initMap">
+    <script async defer src=
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyCR_3sYLANIJJ0IlZSAMp-a9PYWbCCCadg&callback=initMap">
     </script>
 
 
+    <!-- BEGIN FOOTER -->
 
-
-
-
-
-
-
-
-
-
-    <br />
-    <br />
+    <br>
+    <br>
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h3 class="section-heading">Contact Us</h3>
                     <hr class="primary">
-                    <p>Send us a message or reach us on social media.</p>
-                    <br />
-                </div>
-                <br />
+                    <p>Send us a message or reach us on social media.</p><br>
+                </div><br>
                 <div class="col-lg-12 text-center">
-                    <a href="mailto:mchuang@ucsd.edu"><i class="glyphicon glyphicon-envelope"></i></a>
-                    <p><a href="mailto:teampholo@gmail.com">teampholo@gmail.com</a></p>
-                    <br />
-                    <br />
+                    <a href="mailto:teampholo@gmail.com"><i class=
+                    "glyphicon glyphicon-envelope"></i></a>
+                    <p><a href=
+                    "mailto:teampholo@gmail.com">teampholo@gmail.com</a></p><br>
+
+                    <br>
                 </div>
             </div>
         </div>
     </section>
     <center>
-    <footer>
-    © 2016 Pholo Inc.
-    <br />
-    <br />
-    <br />
-    </footer>
+        <footer>
+            © 2016 Pholo Inc.<br>
+            <br>
+            <br>
+        </footer>
     </center>
 
-
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src=
-    "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
     </script> 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-     
     <script src="js/bootstrap.min.js">
     </script>
 </body>
