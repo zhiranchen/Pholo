@@ -158,6 +158,8 @@
             <div class = "thumb" id="instafeed4"></div>
             <!--<div id="instafeed2"></div>-->
             <!--<div id="instafeed3"></div>-->
+
+            <!--
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" >
                 <a class="thumbnail" href="searchResult.html"><img alt="" class=
                 "img-responsive" src="img/1.jpg"></a>
@@ -205,7 +207,7 @@
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#"><img alt="" class=
                 "img-responsive" src="img/12.jpg"></a>
-            </div>
+            </div>-->
         </div>
     </div>
 
@@ -266,7 +268,8 @@
             userId: '45857988',     
             sortBy:'most-liked',
             limit: 24,
-            template: '<div class ="col-lg-3 col-md-4 col-xs-6 thumb thumbnail" ><a href="{{link}}"><img alt="" class= "img-responsive" src="{{image}}"/></a><center><label>Location: {{location}}</label><br/><label>Likes: {{model.likes.count}}</label></center><div>',
+            //template: '<div class ="col-lg-3 col-md-4 col-xs-6 thumb thumbnail" ><a href="{{link}}"><img alt="" class= "img-responsive" src="{{image}}"/></a><center><label>Location: {{location}}</label><br/><label>Likes: {{model.likes.count}}</label></center><div>',
+            template: '<div class ="col-lg-3 col-md-4 col-xs-6 thumb thumbnail" ><a href="{{link}}"><img alt="" class= "img-responsive" src="{{image}}"/></a></div>',            
             resolution:'standard_resolution',
             success: function(data){
                 var images = data.data;
@@ -295,6 +298,6 @@
         });
         feed.run();
     </script>
-    </script>
+
 </body>
 </html>

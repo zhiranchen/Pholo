@@ -198,6 +198,14 @@
     <br>
     <div class="container">
         <div class="row">
+
+            <div class = "thumb" id="instafeed1"></div>
+            <div class = "thumb" id="instafeed2"></div>
+            <div class = "thumb" id="instafeed3"></div>
+            <div class = "thumb" id="instafeed4"></div>
+
+
+            <!--
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="searchResult.html"><img alt="" class=
                 "img-responsive" src="img/1.jpg"></a>
@@ -329,7 +337,7 @@
                         <b>Distance:</b> 3.2 miles</p>
                     </center>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 
@@ -377,7 +385,46 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
     </script> 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js">
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+    <script type="text/javascript">
+        var imgs = [];
+        var feed = new Instafeed({
+            get: 'user',
+            accessToken:'45857988.1677ed0.2a9f9a44846c429ea09aed2c4d3714cc',
+            userId: '45857988',     
+            sortBy:'most-liked',
+            limit: 24,
+            template: '<div class ="col-lg-3 col-md-4 col-xs-6 thumb thumbnail" ><a href="{{link}}"><img alt="" class= "img-responsive" src="{{image}}"/></a><center><label>Comments: {{model.comments.count}}</label><br/><label>Likes: {{model.likes.count}}</label></center></div>',
+            //template: '<div class ="col-lg-3 col-md-4 col-xs-6 thumb thumbnail" ><a href="{{link}}"><img alt="" class= "img-responsive" src="{{image}}"/></a><center><br/><label>Likes: {{model.likes.count}}</label></center></div>',
+            success: function(data){
+                var images = data.data;
+                var result;
+                for(i=0;i<images.length;i++)
+                {
+                    var image = images[i];
+                    result = this._makeTemplate(this.options.template,{
+                        model:image,
+                        id:image.id,
+                        link:image.link,
+                        image:image.images[this.options.resolution].url
+                    });
+                    imgs.push(result);
+                }
+                //split the feed into divs
+                $("#instafeed1").html(imgs.slice(0,4));
+                $("#instafeed2").html(imgs.slice(4,8));
+                $("#instafeed3").html(imgs.slice(8,12));
+                $("#instafeed4").html(imgs.slice(12,16));
+            }
+            //resolution: 'standard_resolution',
+            //clientId:'46315df4e6824890a23b186448845991',
+            //get:'tagged',
+            //tagName:'california',
+        });
+        feed.run();
     </script>
+
 </body>
 </html>
