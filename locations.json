@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Potato Chip",
+        "longitude": 26365,
+        "laditude": 2553,
+        "altitude": 2554,
+        "tags":["portrait", "landscape", "pet-friendly"],
+        "images":"http://luggageandlipstick.com/wp-content/uploads/2013/08/PotatoChipRock-254.jpg",
+    }
+    {
+        "name": "La Jolla Shores",
+        "longitude": 234,
+        "laditude": 32425,
+        "altitude": 245,
+        "tags":["portrait", "landscape", "pet-friendly"],
+        "images": "none",
+    },
+    {
+        "name": "Geisel Library",
+        "longitude": 245,
+        "laditude": 243,
+        "altitude": 2565,
+        "tags":["portrait", "landscape"],
+        "images": "none",
+    },
+    {
+        "name": "Black's Beach",
+        "longitude":253,
+        "laditutde": 24556,
+        "altitude": 252,
+        "tags":["portrait", "landscape", "pet-friendly"],
+        "images": "none",
+    }
+]

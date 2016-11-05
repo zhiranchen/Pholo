@@ -10,7 +10,8 @@ var handlebars = require('express3-handlebars');
 
 var app = express();
 
-
+//existing controller input below
+var locationPage = require('./routes/locationPage');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -35,44 +36,18 @@ if ('development' == app.get('env')) {
 
 
 // Add routes here
-app.get('/', (req, res) => {
-	res.render('index');
-});
-app.get('/index', (req, res) => {
-	res.render('index');
-});
-
-app.get('/about', (req,res) =>{
-	res.render('about');
-})
-app.get('/account',(req,res) =>{
-	res.render('account');
-})
-
-app.get('/addLocation', (req,res) =>{
-	res.render('addLocation');
-})
-app.get('/addPhoto', (req, res) => {
-	res.render('addPhoto');
-});
-app.get('/help', (req, res) => {
-	res.render('help');
-});
-app.get('/register', (req, res) => {
-	res.render('register');
-});
-app.get('/searchResult', (req, res) => {
-	res.render('searchResult');
-});
-app.get('/searchResultTheme', (req, res) => {
-	res.render('searchResultTheme');
-});
-app.get('/searchResultThemeMap', (req, res) => {
-	res.render('searchResultThemeMap');
-});
-app.get('/searchResultThemeComments', (req, res) => {
-	res.render('searchResultThemeComments');
-});
+app.get('/'/*,RouteFunction.view*/);
+app.get('/index'/*,RouteFunction.view*/);
+app.get('/about'/*,RouteFunction.view*/);
+app.get('/account'/*,RouteFunction.view*/);
+app.get('/addLocation'/*,RouteFunction.view*/);
+app.get('/addPhoto'/*,RouteFunction.view*/);
+app.get('/help' /*,RouteFunction.view*/);
+app.get('/register'/*,RouteFunction.view*/);
+app.get('/searchResult', locationPage.view);
+app.get('/searchResultTheme'/*,RouteFunction.view*/);
+app.get('/searchResultThemeMap'/*,RouteFunction.view*/);
+app.get('/searchResultThemeComments'/*,RouteFunction.view*/);
 
 
 
