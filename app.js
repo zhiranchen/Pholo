@@ -12,7 +12,15 @@ var app = express();
 
 //existing controller input below
 var locationPage = require('./routes/locationPage');
-
+var about = require('./routes/about');
+var account = require('./routes/account');
+var addLocation = require('./routes/addLocation');
+var addPhoto = require('./routes/addPhoto');
+var help = require('./routes/help');
+var index = require('./routes/index');
+var register = require('./routes/index');
+var searchResultTheme = require('./routes/searchResultTheme');
+var searchResultThemeMap = require('./routes/searchResultThemeMap');
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
@@ -36,18 +44,18 @@ if ('development' == app.get('env')) {
 
 
 // Add routes here
-app.get('/'/*,RouteFunction.view*/);
-app.get('/index'/*,RouteFunction.view*/);
-app.get('/about'/*,RouteFunction.view*/);
-app.get('/account'/*,RouteFunction.view*/);
-app.get('/addLocation'/*,RouteFunction.view*/);
-app.get('/addPhoto'/*,RouteFunction.view*/);
-app.get('/help' /*,RouteFunction.view*/);
-app.get('/register'/*,RouteFunction.view*/);
+app.get('/', index.view);
+app.get('/index', index.view);
+app.get('/about', about.view);
+app.get('/account', account.view);
+app.get('/addLocation', addLocation.view);
+app.get('/addPhoto', addPhoto.view);
+app.get('/help', help.view);
+app.get('/register', register.view);
 app.get('/searchResult', locationPage.view);
-app.get('/searchResultTheme'/*,RouteFunction.view*/);
-app.get('/searchResultThemeMap'/*,RouteFunction.view*/);
-app.get('/searchResultThemeComments'/*,RouteFunction.view*/);
+app.get('/searchResultTheme', searchResultTheme.view);
+app.get('/searchResultThemeMap', searchResultThemeMap.view);
+//app.get('/searchResultThemeComments'/*,RouteFunction.view*/);
 
 
 
