@@ -1,8 +1,7 @@
+// Get all of locations data
+var data = require('../locations.json');
+
 exports.view = function(req,res){
-    console.log("test");
-    res.render('index',{
-        name:"potato chip test!",
-        distance: "X.X miles",
-        shootingType: "Portrait, Landscape, Pet-Friendly"
-    });
+	console.log("yay, index.js just ran!");
+    res.render('index',data);
 };

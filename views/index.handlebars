@@ -19,12 +19,14 @@
         margin: 0;
         padding: 0;
       }
+
     </style>
 
     <title>Pholo</title>
 
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/hovereffect.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"
@@ -152,12 +154,12 @@
 
     <div class="container">
         <div class="row">
+            <!--
             <div class = "thumb" id="instafeed1"></div>
             <div class = "thumb" id="instafeed2"></div>
             <div class = "thumb" id="instafeed3"></div>
             <div class = "thumb" id="instafeed4"></div>
-            <!--<div id="instafeed2"></div>-->
-            <!--<div id="instafeed3"></div>-->
+            -->
 
             <!--
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" >
@@ -207,7 +209,24 @@
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                 <a class="thumbnail" href="#"><img alt="" class=
                 "img-responsive" src="img/12.jpg"></a>
-            </div>-->
+            </div>
+            -->
+
+            {{#each locationArray}}
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="{{imageURL}}" alt="">
+                        <div class="overlay">
+                            <h2>{{name}}</h2>
+                            <p>
+                                <a href="#">Explore More</a>
+                            </p> 
+                        </div>
+                </div>
+            </div>
+            {{/each}}
+
+
         </div>
     </div>
 
@@ -255,12 +274,16 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
     </script> 
+
+    <script src="js/jquery-1.11.0.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/js/bootstrap.min.js">
-    </script>
+
+    <script src="js/bootstrap.min.js"</script>
+
     <!-- Include plug in from instafeed -->
-    <script type="text/javascript" src="js/instafeed.min.js"></script>
+    <!--<script type="text/javascript" src="js/instafeed.min.js"></script>
     <script type="text/javascript">
+        /*
         var imgs = [];
         var feed = new Instafeed({
             get: 'user',
@@ -297,7 +320,10 @@
             //tagName:'california',
         });
         feed.run();
-    </script>
+        */
+    </script>-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
 
 </body>
 </html>
