@@ -4,105 +4,112 @@
             "name": "Potato Chip",
             "description": "Hike on thin rock and explore",
             "longitude": 26365,
-            "laditude": 2553,
+            "latitude": 2553,
             "altitude": 2554,
             "tags": [
                 "portrait",
                 "landscape",
                 "pet-friendly"
             ],
-            "imageURL": "https://s-media-cache-ak0.pinimg.com/originals/2d/39/2b/2d392b3fbc14fb1b1f826329aab28844.jpg"
+            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/1.jpg"
         },
         {
             "name": "La Jolla Shores",
             "description": "Famous surfing spot",
             "longitude": 234,
-            "laditude": 32425,
+            "latitude": 32425,
             "altitude": 245,
             "tags": [
                 "portrait",
                 "landscape",
                 "pet-friendly"
             ],
-            "imageURL": "http://blog.forbestravelguide.com/wp-content/uploads/2012/02/2.La-Jolla-Shores-Beach5.jpg"
+            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/4.jpg"
         },
         {
             "name": "Geisel Library",
             "description": "The worst building designed by the best architect",
             "longitude": 245,
-            "laditude": 243,
+            "latitude": 243,
             "altitude": 2565,
             "tags": [
                 "portrait",
                 "landscape"
             ],
-            "imageURL": "https://markshimazuphotography.files.wordpress.com/2013/09/geisel_library_university_california_san_diego_la_jolla_ucsd.jpg"
+            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/11.jpg"
         },
         {
             "name": "Black's Beach",
             "description": "Has stellar associative memory",
             "longitude": 253,
-            "laditutde": 24556,
+            "latitude": 24556,
             "altitude": 252,
             "tags": [
                 "portrait",
                 "landscape",
                 "pet-friendly"
             ],
-            "imageURL": "https://s-media-cache-ak0.pinimg.com/736x/25/e9/08/25e908eab362fbfcc252f5a3698ab85c.jpg"
+            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/8.jpg"
         },
         {
             "name": "Sripps pier",
             "description": "Best photospot",
             "longitude": 253,
-            "laditutde": 24556,
+            "latitude": 24556,
             "altitude": 252,
             "tags": [
                 "portrait",
                 "landscape"
             ],
-            "imageURL": "http://media.sdreader.com/img/photos/2014/02/24/Scripps_Pier_-_Alex_Baltov_t670.jpg?b3f6a5d7692ccc373d56e40cf708e3fa67d9af9d"
+            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/2.jpg"
         },
         {
-            "name": "Sripps pier",
+            "name": "MCASD",
             "description": "Best photospot",
             "longitude": 253,
-            "laditutde": 24556,
+            "latitude": 24556,
             "altitude": 252,
             "tags": [
                 "portrait",
                 "landscape"
             ],
-            "imageURL": "http://www.oceanlight.com/stock-photo/scripps-research-pier-image-29130-7195.jpg"
+            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/9.jpg"
         },
         {
             "name": "Salk Institute",
             "description": "Classic spot for Graduation Portrait",
             "longitude": 253,
-            "laditutde": 24556,
+            "latitude": 24556,
             "altitude": 252,
             "tags": [
                 "portrait",
                 "landscape"
             ],
-            "imageURL": "https://c1.staticflickr.com/9/8242/8539018832_1445b08125_b.jpg"
+            "imageURL": "http://majdnazo.com/wp-content/uploads/2016/08/Photo-Jan-22-2.jpeg"
         },
         {
             "name": "Del Mar Beach",
             "description": "Best photospot",
             "longitude": 253,
-            "laditutde": 24556,
+            "latitude": 24556,
             "altitude": 252,
             "tags": [
                 "portrait",
                 "landscape"
             ],
-            "imageURL": "https://media4lifephotographydotcom.files.wordpress.com/2014/05/just-another-day.jpg"
+            "imageURL": "https://danielperrondpa.files.wordpress.com/2016/03/sd_beach_solana_03.jpg"
         },
         {
-            "name": "a",
-            "description": "a",
-            "imageURL": "a"
+            "name": "Liberty Public Market",
+            "description": "Best photospot",
+            "longitude": 32.7359561,
+            "latitude": -117.2048351,
+            "altitude": 252,
+            "tags": [
+                "portrait",
+                "landscape"
+            ],
+            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/10.jpg"
         }
     ]
 }
