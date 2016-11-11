@@ -119,6 +119,11 @@
             ],
             "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/10.jpg",
             "likes": 675
+        },
+        {
+            "name": "",
+            "description": "",
+            "imageURL": ""
         }
     ],
     "_locals": {}
