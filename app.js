@@ -4,9 +4,12 @@
 var express = require('express');
 var app = express();
 var path = require('path');
+var bodyParser = require('body-parser');
 var handlebars = require('express3-handlebars');
+var favicon = require('serve-favicon');
+var errorHandler = require('express-error-handler')
+var methodOverride = require('method-override')
 
-// var index = require('./routes/index');
 
 var app = express();
 
@@ -28,20 +31,19 @@ app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
-app.use(express.favicon());
-app.use(express.logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded());
-app.use(express.methodOverride());
-app.use(express.cookieParser('Pholo Key'));
-app.use(express.session());
-app.use(app.router);
+app.use(favicon(__dirname + '/public/favicon.ico'));
+//app.use(express.logger('dev'));
+app.use(bodyParser.json());
+//app.use(express.urlencoded());
+app.use(methodOverride());
+//app.use(express.cookieParser('Pholo Key'));
+//app.use(express.session());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
 // development only
 if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
+	app.use(errorHandler());
 }
 
 

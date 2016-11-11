@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.14.0",
+    "express":"*",
     "jsonfile": "^2.4.0",
-    "touch": "^1.0.0"
+    "touch": "^1.0.0",
+    "body-parser":"*"
   },
   "engines": {
     "node": "7.1.0"
