@@ -1,12 +1,9 @@
 //get locations data -- not sure why not working?
 //var locs = require('../locations.json')
 
-exports.view = function(req,res){
-    console.log("test");
-    res.render('searchResult',{
-        name:"potato chip test!",
-        distance: "X.X miles",
-        shootingType: "Portrait, Landscape, Pet-Friendly"
-    });
+exports.viewLocation= function(req,res){
+	var name = req.params.name;
+	console.log('The location name is: '+ name);
+    res.render('potatochip');
 };
 

@@ -67,7 +67,7 @@
                         navigation</span> Menu <i class=
                         "fa fa-bars"></i></button> <a class=
                         "navbar-brand page-scroll" href="/index"><img src=
-                        "img/P.png"></a>
+                        "/img/P.png"></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -146,7 +146,7 @@
         <br />
         <div>
             <center>
-            <h1>{{name}}</h1>
+            <h1>{{locationName}}</h1>
             </center>
         </div>
 
@@ -164,7 +164,7 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="img/1.jpg">
+              <img src="/img/1.jpg">
             </div>
 
             <div class="item">
@@ -197,17 +197,23 @@
                     <h2> Information </h2>
                 <!-- Search result description section -->
                 <div>
-                    <p class="distance"><b>Distance:</b> {{distance}}</p>
+                    <p class="distance"><b>Description</b>locationDescription}}</p>
                 </div>
                 <div>
-                    <p class="popularity"><b>Shooting Type:</b> {{shootingType}}</p>
+                    <p class="popularity"><b>Tags:</b>locationTags}}</p>
                 </div>
                 <div>
-                    <p class="mentions"><b>Mentions:</b> 45,000+</p>
+                    <p class="mentions"><b>Likes:</b>{{locationLikes}}</p>
                 </div>  
                 <div>
-                    <p class="notes"><b>Notes:</b> Outdoors, hike, dog-friendly</p>
-                </div>      
+                    <p><b>Longitude</b> {{locationLongitude}}</p>
+                </div>  
+                <div>
+                    <p><b>Latitude</b> {{locationLatitude}}</p>
+                </div> 
+                <div>
+                    <p><b>Altitude</b> {{locationAltitude}}</p>
+                </div>   
                 </center>
             </div>  
             <br>

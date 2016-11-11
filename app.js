@@ -24,6 +24,7 @@ var index = require('./routes/index');
 var register = require('./routes/index');
 var searchResultTheme = require('./routes/searchResultTheme');
 var searchResultThemeMap = require('./routes/searchResultThemeMap');
+var singleLocationPage = require('./routes/singleLocationPage');
 var add = require('./routes/add');
 
 // all environments
@@ -56,11 +57,11 @@ app.get('/addLocation', addLocation.view);
 app.get('/addPhoto', addPhoto.view);
 app.get('/help', help.view);
 app.get('/register', register.view);
-app.get('/searchResult', locationPage.view);
 app.get('/searchResultTheme', searchResultTheme.view);
 app.get('/searchResultThemeMap', searchResultThemeMap.view);
 app.get('/add', add.addLocationfromUser); //add new location from user's input
-//app.get('/searchResultThemeComments'/*,RouteFunction.view*/);
+//app.get('/singleLocationPage/:name',singleLocationPage.viewLocation);
+app.get('/singleLocationPage/:name/:longitude/:altitude/:latitude/:likes',singleLocationPage.viewLocation);
 
 
 
