@@ -75,21 +75,20 @@
                     <div class="collapse navbar-collapse" id=
                     "bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
+                            <!--
                             <li>
                                 <form class="navbar-form" id="search" name=
                                 "search" role="search">
                                     <div class="form-group">
-                                        <!--<input class="form-control" id="search"
+                                        <input class="form-control" id="search"
                                         placeholder="Where to?" type="text"> 
-                                        <button type="submit" class="btn btn-default" id="searchButton">Search</button>-->
+                                        <button type="submit" class="btn btn-default" id="searchButton">Search</button>
                                          <a class="btn btn-default" href=
                                         "/searchResultTheme" id=
                                         "searchButton" role="button">Trending Information</a>
                                     </div>
                                 </form>
                             </li>
-
-                            <!--
                             <li>
                                 <a aria-expanded="false" aria-haspopup="true"
                                 class="dropdown-toggle" data-toggle="dropdown"
@@ -124,7 +123,12 @@
                                 </ul>
                             </li>
                             -->
-
+                            <li>
+                                <a href="/index"><b>Home</b></a>
+                            </li>
+                            <li>
+                                <a href="/searchResultThemeMap"><b>Map View</b></a>
+                            </li>
                             <li>
                                 <a href="/addLocation"><b>Add Location</b></a>
                             </li>
@@ -227,9 +231,9 @@
                     <img class="img-responsive" src="{{imageURL}}" alt="">
                         <div class="overlay">
                             <h2><br>{{name}}</h2>
-                            <p>
-                                <a href="#">Explore More</a>
-                            </p> 
+                                <font color="white"><b>{{likes}} Likes</b></font>
+                                <br>
+                                <a href="/searchResultThemeMap">Explore More</a>
                         </div>
                 </div>
             </div>
@@ -238,8 +242,7 @@
 
         </div>
     </div>
-
-    
+ 
 
     <!-- BEGIN FOOTER -->
 

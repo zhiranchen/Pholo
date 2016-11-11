@@ -25,6 +25,7 @@
 
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/hovereffect.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"
@@ -74,21 +75,20 @@
                     <div class="collapse navbar-collapse" id=
                     "bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
+                            <!--
                             <li>
                                 <form class="navbar-form" id="search" name=
                                 "search" role="search">
                                     <div class="form-group">
-                                        <!--<input class="form-control" id="search"
+                                        <input class="form-control" id="search"
                                         placeholder="Where to?" type="text"> 
-                                        <button type="submit" class="btn btn-default" id="searchButton">Search</button>-->
+                                        <button type="submit" class="btn btn-default" id="searchButton">Search</button>
                                          <a class="btn btn-default" href=
                                         "/searchResultTheme" id=
                                         "searchButton" role="button">Trending Information</a>
                                     </div>
                                 </form>
                             </li>
-                            
-                            <!--
                             <li>
                                 <a aria-expanded="false" aria-haspopup="true"
                                 class="dropdown-toggle" data-toggle="dropdown"
@@ -123,7 +123,12 @@
                                 </ul>
                             </li>
                             -->
-
+                            <li>
+                                <a href="/index"><b>Home</b></a>
+                            </li>
+                            <li>
+                                <a href="/searchResultThemeMap"><b>Map View</b></a>
+                            </li>
                             <li>
                                 <a href="/addLocation"><b>Add Location</b></a>
                             </li>
@@ -147,11 +152,12 @@
     <br>
     <div class="search-result">
         <center>
-            <h1>Trending Information</h1>
+            <h1>Map View</h1>
         </center>
         <br>
     </div><!-- Showing result by what order, filter options -->
 
+    <!--
     <center>
         <div class="row">
             <div class="container-fluid">
@@ -167,13 +173,13 @@
                             </li>
                             <li>
                                 <a href="/searchResultThemeMap">Comments</a>
-                            </li>
+                            </li>-->
                             <!--
                             <li>
                                 <a href="#distanceFunction">Distance</a>
                             </li>
                             -->
-                        </ul>
+                        <!--</ul>
                     </div>
                 </div>
                 <div class="container-fluid">
@@ -189,14 +195,14 @@
                                 </li>
                                 <li>
                                     <a href="/searchResultThemeMap">Map View</a>
-                                </li>
+                                </li>-->
                                 <!--                                
                                 <li class="divider" role="separator"></li>
                                 <li>
                                     <a href="#hybridFunction">Hybrid View</a>
                                 </li>
                                 -->
-                            </ul>
+                            <!--</ul>
                         </div>
                     </div>
                 </div>
@@ -206,7 +212,7 @@
     <br>
     <br>
     <br>
-    <br>
+    <br>-->
 
     <div id="map"></div>
     <center>
@@ -242,7 +248,7 @@
                 map.setZoom(13);
 
                 // https://gist.github.com/m-chuang/b65045add0fbf8e537b654a7d383940f
-                map.data.loadGeoJson('https://gist.githubusercontent.com/m-chuang/b65045add0fbf8e537b654a7d383940f/raw/6f708ff8ba881818982160812083e12fc3f9fc0d/map.geojson');
+                map.data.loadGeoJson('https://gist.githubusercontent.com/m-chuang/b65045add0fbf8e537b654a7d383940f/raw/db46c483c82a76dd1d5d2416211d03a74fef1f87/map.geojson');
 
                  map.data.addListener('click', function(event) {
                    infowindow.setContent(event.feature.getProperty('name')+"<br>"+event.feature.getProperty('description'));

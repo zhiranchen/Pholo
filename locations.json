@@ -11,7 +11,8 @@
                 "landscape",
                 "pet-friendly"
             ],
-            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/1.jpg"
+            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/1.jpg",
+            "likes": 245
         },
         {
             "name": "La Jolla Shores",
@@ -24,7 +25,8 @@
                 "landscape",
                 "pet-friendly"
             ],
-            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/4.jpg"
+            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/4.jpg",
+            "likes": 34
         },
         {
             "name": "Geisel Library",
@@ -36,7 +38,8 @@
                 "portrait",
                 "landscape"
             ],
-            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/11.jpg"
+            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/11.jpg",
+            "likes": 98
         },
         {
             "name": "Black's Beach",
@@ -49,7 +52,8 @@
                 "landscape",
                 "pet-friendly"
             ],
-            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/8.jpg"
+            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/8.jpg",
+            "likes": 286
         },
         {
             "name": "Sripps pier",
@@ -61,7 +65,8 @@
                 "portrait",
                 "landscape"
             ],
-            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/2.jpg"
+            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/2.jpg",
+            "likes": 154
         },
         {
             "name": "MCASD",
@@ -73,7 +78,8 @@
                 "portrait",
                 "landscape"
             ],
-            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/9.jpg"
+            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/9.jpg",
+            "likes": 346
         },
         {
             "name": "Salk Institute",
@@ -85,7 +91,8 @@
                 "portrait",
                 "landscape"
             ],
-            "imageURL": "http://majdnazo.com/wp-content/uploads/2016/08/Photo-Jan-22-2.jpeg"
+            "imageURL": "http://majdnazo.com/wp-content/uploads/2016/08/Photo-Jan-22-2.jpeg",
+            "likes": 313
         },
         {
             "name": "Del Mar Beach",
@@ -97,7 +104,8 @@
                 "portrait",
                 "landscape"
             ],
-            "imageURL": "https://danielperrondpa.files.wordpress.com/2016/03/sd_beach_solana_03.jpg"
+            "imageURL": "https://danielperrondpa.files.wordpress.com/2016/03/sd_beach_solana_03.jpg",
+            "likes": 126
         },
         {
             "name": "Liberty Public Market",
@@ -109,7 +117,8 @@
                 "portrait",
                 "landscape"
             ],
-            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/10.jpg"
+            "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/10.jpg",
+            "likes": 675
         }
     ]
 }
