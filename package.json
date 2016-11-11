@@ -1,12 +1,14 @@
 {
   "name": "pholo",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "dependencies": {
     "express": "^4.14.0",
     "jsonfile": "^2.4.0",
     "touch": "^1.0.0"
+  },
+  "engines": {
+    "node": "7.1.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -21,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/zhiranchen/Pholo/issues"
   },
-  "homepage": "https://github.com/zhiranchen/Pholo#readme"
+  "homepage": "https://github.com/zhiranchen/Pholo#readme",
+  "description": ""
+  },
+  "scripts": {
+  "start": "node index.js"
 }
