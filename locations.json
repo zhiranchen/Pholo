@@ -53,6 +53,24 @@
             "altitude": 252,
             "tags":["portrait", "landscape"],
             "imageURL": "http://www.oceanlight.com/stock-photo/scripps-research-pier-image-29130-7195.jpg"           
+        },
+        {
+            "name": "Salk Institute",
+            "description": "Classic spot for Graduation Portrait",
+            "longitude":253,
+            "laditutde": 24556,
+            "altitude": 252,
+            "tags":["portrait", "landscape"],
+            "imageURL": "https://c1.staticflickr.com/9/8242/8539018832_1445b08125_b.jpg"           
+        },
+        {
+            "name": "Del Mar Beach",
+            "description": "Best photospot",
+            "longitude":253,
+            "laditutde": 24556,
+            "altitude": 252,
+            "tags":["portrait", "landscape"],
+            "imageURL": "https://media4lifephotographydotcom.files.wordpress.com/2014/05/just-another-day.jpg"           
         }
     ]
 }

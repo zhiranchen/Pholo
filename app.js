@@ -21,6 +21,8 @@ var index = require('./routes/index');
 var register = require('./routes/index');
 var searchResultTheme = require('./routes/searchResultTheme');
 var searchResultThemeMap = require('./routes/searchResultThemeMap');
+var add = require('./routes/add');
+
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
@@ -55,6 +57,7 @@ app.get('/register', register.view);
 app.get('/searchResult', locationPage.view);
 app.get('/searchResultTheme', searchResultTheme.view);
 app.get('/searchResultThemeMap', searchResultThemeMap.view);
+app.get('/add', add.addLocationfromUser); //add new location from user's input
 //app.get('/searchResultThemeComments'/*,RouteFunction.view*/);
 
 

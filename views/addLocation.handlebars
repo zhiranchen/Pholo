@@ -25,7 +25,8 @@
 
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="/css/hovereffect.css" rel="stylesheet">
+    
     <!-- Custom Fonts -->
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"
     type="text/css">
@@ -161,7 +162,7 @@
 
                     <div class="form-group">
                         <label for="locationaddress">Location Address</label>
-                        <input type="text" class="form-control" id="locationaddress" placeholder="Location Name" name="locationaddress" />
+                        <input type="text" class="form-control" id="locationaddress" placeholder="Location Address" name="locationaddress" />
                     </div>
 
                     <div class="form-group">
@@ -185,16 +186,32 @@
     </div>
 
 
+    <div class="container">
+        <div class="row">
+            {{#each locationArray}}
+            <div class="col-lg-3 col-md-4 col-sm-6 thumb">
+                <div class="hovereffect ">
+                    <img class="img-responsive" src="{{imageURL}}" alt="">
+                        <div class="overlay">
+                            <h2>{{name}}</h2>
+                            <p>
+                                <a href="#">Explore More</a>
+                            </p> 
+                        </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
 
 
-    <!-- BEGIN FOOTER -->
 
+
+     <br>
     <br>
-    <br>
-    <div class="navbar navbar-fixed-bottom container">
         <footer class="footer">
-            <div class="container">
-                <section id="contact">
+            <section id="contact">
+                <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2 text-center">
                             <h2 class="section-heading">Let's get in touch!</h2><legend></legend>
@@ -217,21 +234,68 @@
                             <p><a href="http://facebook.com" style="color:black">facebook.com</a></p>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
             <center>
                 <br>
                 © 2016 Pholo Inc.<br>
                 <br>
             </center>
         </footer>
-    </div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
     </script> 
+
+    <script src="js/jquery-1.11.0.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/js/bootstrap.min.js">
-    </script>
+
+    <script src="js/bootstrap.min.js"</script>
+
+    <!-- Include plug in from instafeed -->
+    <!--<script type="text/javascript" src="js/instafeed.min.js"></script>
+    <script type="text/javascript">
+        /*
+        var imgs = [];
+        var feed = new Instafeed({
+            get: 'user',
+            accessToken:'45857988.1677ed0.2a9f9a44846c429ea09aed2c4d3714cc',
+            userId: '45857988',     
+            sortBy:'most-liked',
+            limit: 24,
+            //template: '<div class ="col-lg-3 col-md-4 col-xs-6 thumb thumbnail" ><a href="{{link}}"><img alt="" class= "img-responsive" src="{{image}}"/></a><center><label>Location: {{location}}</label><br/><label>Likes: {{model.likes.count}}</label></center><div>',
+            template: '<div class ="col-lg-3 col-md-4 col-xs-6 thumb thumbnail" ><a href="\{{link\}}"><img alt="" class= "img-responsive" src="\{{image\}}"/></a></div>',            
+            resolution:'standard_resolution',
+            success: function(data){
+                var images = data.data;
+                var result;
+                for(i=0;i<images.length;i++)
+                {
+                    var image = images[i];
+                    result = this._makeTemplate(this.options.template,{
+                        model:image,
+                        id:image.id,
+                        link:image.link,
+                        image:image.images[this.options.resolution].url
+                    });
+                    imgs.push(result);
+                }
+                //split the feed into divs
+                $("#instafeed1").html(imgs.slice(0,4));
+                $("#instafeed2").html(imgs.slice(4,8));
+                $("#instafeed3").html(imgs.slice(8,12));
+                $("#instafeed4").html(imgs.slice(12,16));
+            }
+            //resolution: 'standard_resolution',
+            //clientId:'46315df4e6824890a23b186448845991',
+            //get:'tagged',
+            //tagName:'california',
+        });
+        feed.run();
+        */
+    </script>-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
 </body>
 </html>
