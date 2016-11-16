@@ -153,6 +153,7 @@
         <div>
             <center>
             <h1>{{locationName}}</h1>
+            <br>
             </center>
         </div>
 
@@ -200,37 +201,33 @@
 
             <div class="search-result-description">
                 <center>
+                    <br>
                     <h2> Information </h2>
                 <!-- Search result description section -->
                 <div>
-                    <p class="distance"><b>Description</b>locationDescription}}</p>
+                    <p><b>Location Name: </b>{{locationName}}</p>
                 </div>
                 <div>
-                    <p class="popularity"><b>Tags:</b>locationTags}}</p>
+                    <p><b>Location Description: </b>{{locationDescription}}</p>
                 </div>
                 <div>
-                    <p class="mentions"><b>Likes:</b>{{locationLikes}}</p>
+                    <p><b>Location Address: </b>{{locationAddress}}</p>
                 </div>  
                 <div>
-                    <p><b>Longitude</b> {{locationLongitude}}</p>
+                    <p><b>Location Tags: </b> {{locationTags}}</p>
                 </div>  
                 <div>
-                    <p><b>Latitude</b> {{locationLatitude}}</p>
+                    <p><b>Location Likes: </b> {{locationLikes}}</p>
                 </div> 
                 <div>
-                    <p><b>Altitude</b> {{locationAltitude}}</p>
+                    <p><b>Location Latitude </b> {{locationLatitude}}</p>
+                </div>   
+                <div>
+                    <p><b>Location Longitude </b> {{locationLongitude}}</p>
                 </div>   
                 </center>
             </div>  
             <br>
-            <!--
-            <div>
-                <center>
-                    <a id="addButton" href="/addPhoto" 
-                    class="btn btn-default" role="button">Add a New Photo</a>
-                </center>
-            </div>
-            -->
         </div>
     <br />
 

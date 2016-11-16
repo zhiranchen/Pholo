@@ -1,23 +1,34 @@
 exports.viewLocation = function(req,res){
-	//controller code goes here
+	//Location Name
 	var name = req.params.name;
-	//var descrption = req.params.description;
-	//var imageURL = req.params.imageURL;
-	var longitude = req.params.longitude;
-	var latitude = req.params.latitude;
-	var altitude = req.params.altitude;
-	//var tags = req.params.tags;
+
+	//Location Description
+	var description = req.params.description;
+
+	//Location Address
+	var address = req.params.address;
+
+	//Location Tags
+	var tags = req.params.tags;
+
+	//Location Likes
 	var likes = req.params.likes;
-	console.log('The project name is: '+name);
+
+	//Location Latitude
+	var latitude = req.params.latitude;
+
+	//Location Longitude
+	var longitude = req.params.longitude;
+
+	//Render Info
 	res.render('singleLocationPage',{
 		'locationName':name,
-		//'locationDescription': description,
-		//'locationImageURL': imageURL,
-		'locationLongitude': longitude,
-		'locationLatitude': latitude,
-		'locationAltitude': altitude,
-		//'locationTags': tags,
-		'locationLikes': likes
+		'locationDescription':description,
+		'locationAddress':address,
+		'locationTags':tags,
+		'locationLikes':likes,
+		'locationLatitude':latitude,
+		'locationLongitude':longitude,
 	});
 
 }
