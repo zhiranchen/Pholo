@@ -6,7 +6,7 @@
             "address": "14644 Lake Poway Rd, Poway, CA 92064",
             "latitude": 33.0092674,
             "longitude": -116.9742491,
-            "tags":"portrait, landscape, hike, outdoors, pet-friendly",
+            "tags": "portrait, landscape, hike, outdoors, pet-friendly",
             "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/1.jpg",
             "likes": 245
         },
@@ -16,7 +16,7 @@
             "address": "8200 Camino Del Oro, La Jolla, CA 92037",
             "latitude": 32.8589947,
             "longitude": -117.2557447,
-            "tags":"portrait, landscape, outdoors, pet-friendly",
+            "tags": "portrait, landscape, outdoors, pet-friendly",
             "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/4.jpg",
             "likes": 342
         },
@@ -26,7 +26,7 @@
             "address": "9500 Gilman Dr, La Jolla, CA 92093",
             "latitude": 32.8811507,
             "longitude": -117.2396384,
-            "tags":"portrait, landscape, indoors",
+            "tags": "portrait, landscape, indoors",
             "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/11.jpg",
             "likes": 126
         },
@@ -36,7 +36,7 @@
             "address": "2800 Torrey Pines Scenic Dr, La Jolla, CA 92037",
             "latitude": 32.8895553,
             "longitude": -117.2624039,
-            "tags":"portrait, landscape, nude beach, outdoor, pet-friendly",
+            "tags": "portrait, landscape, nude beach, outdoor, pet-friendly",
             "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/8.jpg",
             "likes": 286
         },
@@ -46,7 +46,7 @@
             "address": "8500 El Paseo Grande, San Diego, CA 92037",
             "latitude": 32.8658587,
             "longitude": -117.2546549,
-            "tags":"portrait, landscape, beach, sunset",
+            "tags": "portrait, landscape, beach, sunset",
             "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/2.jpg",
             "likes": 354
         },
@@ -56,7 +56,7 @@
             "address": "700 Prospect St, La Jolla, CA 92037",
             "latitude": 32.8445066,
             "longitude": -117.2803802,
-            "tags":"portrait, landscape, art, museum, hard parking",
+            "tags": "portrait, landscape, art, museum, hard parking",
             "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/9.jpg",
             "likes": 346
         },
@@ -66,7 +66,7 @@
             "address": "10010 N Torrey Pines Rd, La Jolla, CA 92037",
             "latitude": 32.8873915,
             "longitude": -117.2475314,
-            "tags":"portrait, landscape, grey, outdoor, sunset",
+            "tags": "portrait, landscape, grey, outdoor, sunset",
             "imageURL": "http://majdnazo.com/wp-content/uploads/2016/08/Photo-Jan-22-2.jpeg",
             "likes": 313
         },
@@ -76,7 +76,7 @@
             "address": "1700 Coast Blvd, Del Mar, CA 92014",
             "latitude": 32.8873866,
             "longitude": -117.2803621,
-            "tags":"portrait, landscape, beach, outdoor, pet-friendly",
+            "tags": "portrait, landscape, beach, outdoor, pet-friendly",
             "imageURL": "https://danielperrondpa.files.wordpress.com/2016/03/sd_beach_solana_03.jpg",
             "likes": 226
         },
@@ -86,7 +86,7 @@
             "address": "2820 Historic Decatur Rd, San Diego, CA 92106",
             "latitude": 32.7400605,
             "longitude": -117.2132085,
-            "tags":"portrait, landscape, food, crowded, trendy",
+            "tags": "portrait, landscape, food, crowded, trendy",
             "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/10.jpg",
             "likes": 175
         }

@@ -14,15 +14,15 @@ var methodOverride = require('method-override')
 var app = express();
 
 //existing controller input below
-var locationPage = require('./routes/locationPage');
+//var locationPage = require('./routes/locationPage');
 var about = require('./routes/about');
-var account = require('./routes/account');
+//var account = require('./routes/account');
 var addLocation = require('./routes/addLocation');
-var addPhoto = require('./routes/addPhoto');
+//var addPhoto = require('./routes/addPhoto');
 var help = require('./routes/help');
 var index = require('./routes/index');
-var register = require('./routes/index');
-var searchResultTheme = require('./routes/searchResultTheme');
+//var register = require('./routes/index');
+//var searchResultTheme = require('./routes/searchResultTheme');
 var map = require('./routes/map');
 var location = require('./routes/location');
 var add = require('./routes/add');
@@ -52,12 +52,12 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/index', index.view);
 app.get('/about', about.view);
-app.get('/account', account.view);
+//app.get('/account', account.view);
 app.get('/addLocation', addLocation.view);
-app.get('/addPhoto', addPhoto.view);
+//app.get('/addPhoto', addPhoto.view);
 app.get('/help', help.view);
-app.get('/register', register.view);
-app.get('/searchResultTheme', searchResultTheme.view);
+//app.get('/register', register.view);
+//app.get('/searchResultTheme', searchResultTheme.view);
 app.get('/map', map.view);
 app.get('/add', add.addLocationfromUser); //add new location from user's input
 //app.get('/singleLocationPage/:name',singleLocationPage.viewLocation);
