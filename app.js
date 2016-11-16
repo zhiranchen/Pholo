@@ -23,7 +23,7 @@ var help = require('./routes/help');
 var index = require('./routes/index');
 var register = require('./routes/index');
 var searchResultTheme = require('./routes/searchResultTheme');
-var searchResultThemeMap = require('./routes/searchResultThemeMap');
+var map = require('./routes/map');
 var location = require('./routes/location');
 var add = require('./routes/add');
 
@@ -58,7 +58,7 @@ app.get('/addPhoto', addPhoto.view);
 app.get('/help', help.view);
 app.get('/register', register.view);
 app.get('/searchResultTheme', searchResultTheme.view);
-app.get('/searchResultThemeMap', searchResultThemeMap.view);
+app.get('/map', map.view);
 app.get('/add', add.addLocationfromUser); //add new location from user's input
 //app.get('/singleLocationPage/:name',singleLocationPage.viewLocation);
 //app.get('/location/:name/:address/:likes/:tags/:description',location.viewLocation);

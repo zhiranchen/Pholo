@@ -19,8 +19,8 @@
   top: 10%;
   border-radius: 80%;
   border: 2px solid #FFF;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.25s;
+  transition: opacity 0.35s, transform 0.25s;
   -webkit-transform: translate3d(50%,50%,0);
   transform: translate3d(50%,50%,0);
 }
