@@ -36,6 +36,8 @@
     <link href=
     'https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
     rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 </head>
 
 <body>
@@ -153,6 +155,7 @@
         <div>
             <center>
             <h1>{{locationName}}</h1>
+            <p><i>{{locationAddress}}</i></p>
             <br>
             </center>
         </div>
@@ -199,19 +202,53 @@
         </div>
         </div>
 
+        <br>
+
+        <center>
+        <table class="pure-table pure-table-horizontal">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Information</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><b>Name</b></td>
+                    <td>{{locationName}}</td>
+                </tr>
+
+                <tr>
+                    <td><b>Address</b></td>
+                    <td>{{locationAddress}}</td>
+                </tr>
+                <tr>
+                    <td><b>Tags</b></td>
+                    <td>{{locationTags}}</td>
+                </tr>
+                <tr>
+                    <td><b>Likes</b></td>
+                    <td>{{locationLikes}}</td>
+                </tr>                
+            </tbody>
+        </table>
+        </center>
+
+        <!--
             <div class="search-result-description">
                 <center>
                     <br>
                     <h2> Information </h2>
-                <!-- Search result description section -->
+
                 <div>
                     <p><b>Location Name: </b>{{locationName}}</p>
                 </div>
-                <!--
+
                 <div>
                     <p><b>Location Description: </b>{{locationDescription}}</p>
                 </div>
-                -->
+
                 <div>
                     <p><b>Location Address: </b>{{locationAddress}}</p>
                 </div>  
@@ -221,16 +258,19 @@
                 <div>
                     <p><b>Location Likes: </b> {{locationLikes}}</p>
                 </div> 
-                <!--
+
                 <div>
                     <p><b>Location Latitude: </b> {{locationLatitude}}</p>
                 </div>   
                 <div>
                     <p><b>Location Longitude: </b> {{locationLongitude}}</p>
                 </div>   
-                -->
+
                 </center>
             </div>  
+        -->
+
+
             <br>
         </div>
     <br />

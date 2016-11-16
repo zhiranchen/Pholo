@@ -3,9 +3,9 @@
         {
             "name": "Potato Chip",
             "description": "Potato Chip Rock via Mt. Woodson Trail is a 6.9 mile heavily trafficked out and back trail located near Poway, CA that features a lake and is rated as moderate.",
-            "address": "Ramona, CA 92065",
-            "longitude": 33.0092674,
-            "latitude": -116.9742491,
+            "address": "14644 Lake Poway Rd, Poway, CA 92064",
+            "latitude": 33.0092674,
+            "longitude": -116.9742491,
             "tags": [
                 "portrait",
                 "landscape",
@@ -16,38 +16,37 @@
         },
         {
             "name": "La Jolla Shores",
-            "description": "Famous surfing spot",
-            "address": "test",            
-            "longitude": 234,
-            "latitude": 32425,
-            "altitude": 245,
+            "description": "A wide, mile-long beach with soft sand, clean water and gentle waves, La Jolla Shores is an ideal spot for families, sunbathers and beginner surfers.",
+            "address": "8200 Camino Del Oro, La Jolla, CA 92037",            
+            "latitude": 32.8589947,
+            "longitude": -117.2557447,
             "tags": [
                 "portrait",
                 "landscape",
                 "pet-friendly"
             ],
             "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/4.jpg",
-            "likes": 34
+            "likes": 342
         },
         {
             "name": "Geisel Library",
-            "description": "The worst building designed by the best architect",
-            "longitude": 245,
-            "latitude": 243,
-            "altitude": 2565,
+            "description": "Geisel Library is the main library building of the University of California, San Diego Library. It is named in honor of Audrey and Theodor Seuss Geisel, better known as Dr. Seuss.",
+            "address": "9500 Gilman Dr, La Jolla, CA 92093",
+            "latitude": 32.8811507,
+            "longitude": -117.2396384,
             "tags": [
                 "portrait",
                 "landscape"
             ],
             "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/11.jpg",
-            "likes": 98
+            "likes": 126
         },
         {
             "name": "Black's Beach",
             "description": "Has stellar associative memory",
-            "longitude": 253,
-            "latitude": 24556,
-            "altitude": 252,
+            "address": "2800 Torrey Pines Scenic Dr, La Jolla, CA 92037",
+            "latitude": 32.8895553,
+            "longitude": -117.2624039,
             "tags": [
                 "portrait",
                 "landscape",
@@ -57,24 +56,24 @@
             "likes": 286
         },
         {
-            "name": "Sripps pier",
-            "description": "Best photospot",
-            "longitude": 253,
-            "latitude": 24556,
-            "altitude": 252,
+            "name": "Sripps Pier",
+            "description": "Scripps Pier is a familiar landmark located between La Jolla Shores and Blacks Beach, and next to the Scripps Institute of Oceanography, which owns and operates the pier.",
+            "address": "8500 El Paseo Grande, San Diego, CA 92037",
+            "latitude": 32.8658587,
+            "longitude": -117.2546549,
             "tags": [
                 "portrait",
                 "landscape"
             ],
             "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/2.jpg",
-            "likes": 154
+            "likes": 354
         },
         {
             "name": "MCASD",
-            "description": "Best photospot",
-            "longitude": 253,
-            "latitude": 24556,
-            "altitude": 252,
+            "description": "Located in the heart of downtown San Diego and in the coastal community of La Jolla, MCASD provides an unprecedented variety of exhibition spaces and experiences for the community.",
+            "address":"700 Prospect St, La Jolla, CA 92037",
+            "latitude": 32.8445066,
+            "longitude": -117.2803802,
             "tags": [
                 "portrait",
                 "landscape"
@@ -84,10 +83,10 @@
         },
         {
             "name": "Salk Institute",
-            "description": "Classic spot for Graduation Portrait",
-            "longitude": 253,
-            "latitude": 24556,
-            "altitude": 252,
+            "description": "The Salk Institute for Biological Studies is an independent, non-profit, scientific research institute located in La Jolla, San Diego, California, United States.",
+            "address": "10010 N Torrey Pines Rd, La Jolla, CA 92037",
+            "latitude": 32.8873915,
+            "longitude": -117.2475314,
             "tags": [
                 "portrait",
                 "landscape"
@@ -97,34 +96,29 @@
         },
         {
             "name": "Del Mar Beach",
-            "description": "Best photospot",
-            "longitude": 253,
-            "latitude": 24556,
-            "altitude": 252,
+            "description": "The beach in Del Mar is one of the most beautiful and enjoyable in San Diego. The two plus miles of sandy beach offers a great place to relax, walk, or run.",
+            "address": "1700 Coast Blvd, Del Mar, CA 92014",
+            "latitude": 32.8873866,
+            "longitude": -117.2803621,
             "tags": [
                 "portrait",
                 "landscape"
             ],
             "imageURL": "https://danielperrondpa.files.wordpress.com/2016/03/sd_beach_solana_03.jpg",
-            "likes": 126
+            "likes": 226
         },
         {
             "name": "Liberty Public Market",
             "description": "Best photospot",
-            "longitude": 32.7359561,
-            "latitude": -117.2048351,
-            "altitude": 252,
+            "address": "2820 Historic Decatur Rd, San Diego, CA 92106",
+            "latitude": 32.7400605,
+            "longitude": -117.2132085,
             "tags": [
                 "portrait",
                 "landscape"
             ],
             "imageURL": "http://acsweb.ucsd.edu/~mchuang/img/10.jpg",
-            "likes": 675
-        },
-        {
-            "name": "",
-            "description": "",
-            "imageURL": ""
+            "likes": 175
         }
     ],
     "_locals": {}
