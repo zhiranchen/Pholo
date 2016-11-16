@@ -21,7 +21,7 @@ exports.viewLocation = function(req,res){
 	var longitude = req.params.longitude;
 
 	//Render Info
-	res.render('singleLocationPage',{
+	res.render('location',{
 		'locationName':name,
 		'locationDescription':description,
 		'locationAddress':address,
