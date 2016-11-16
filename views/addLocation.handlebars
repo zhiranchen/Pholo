@@ -156,7 +156,6 @@
         </center>
     </div>
     <br>
-    <br>
         
     
     <div class="container">
@@ -166,29 +165,36 @@
                 <center>
                 <legend>Where should we feature next?</legend>
                 </center>
-                <br>
                 <form id="addLocationForm" role="form" method="get" action="/add">
-                    <h3>Add a location</h3>
                     <div class="form-group">
                         <label for="locationname">Location Name</label>
                            <input type="text" class="form-control" id="locationname" placeholder="Location Name" name="locationname"/>
                     </div>
-
                     <div class="form-group">
-                        <label for="locationaddress">Location Address</label>
-                        <input type="text" class="form-control" id="locationaddress" placeholder="Location Address" name="locationaddress" />
+                        <label for="locationdescription">Description</label>
+                           <input type="text" class="form-control" id="locationdescription" placeholder="Description" name="locationdescription"/>
                     </div>
-
                     <div class="form-group">
-                        <label for="locationimglink">Location Image URL</label>
-                        <input type="text" class="form-control" id="locationimglink" placeholder="Image URL" name="locationimglink" />
+                        <label for="locationaddress">Address</label>
+                        <input type="text" class="form-control" id="locationaddress" placeholder="Address" name="locationaddress" />
                     </div>
-
                     <div class="form-group">
-                        <label for="locationdescription">Location Description</label>
-                        <input type="text" class="form-control" id="locationdescription" placeholder="Description" name="locationdescription" />
+                        <label for="locationlatitude">Location Latitude</label>
+                        <input type="text" class="form-control" id="locationlatitude" placeholder="Location Latitude" name="locationlatitude" />
                     </div>
-                                
+                    <div class="form-group">
+                        <label for="locationlongitude">Location Longitude</label>
+                        <input type="text" class="form-control" id="locationlongitude" placeholder="Location Longitude" name="locationlongitude" />
+                    </div>
+                    <div class="form-group">
+                        <label for="locationtags">Tags</label>
+                        <input type="text" class="form-control" id="locationtags" placeholder="Tags" name="locationtags" />
+                    </div>
+                    <div class="form-group">
+                        <label for="locationimglink">Sample Image URL</label>
+                        <input type="text" class="form-control" id="locationimglink" placeholder="Sample Image URL" name="locationimglink" />
+                    </div>
+                          
                     <br>
                         
                     <input type="submit" id="submitBtn" class="btn btn-default btn-block m-t-md" value="Add a new Location"></input>
