@@ -61,8 +61,8 @@ app.get('/searchResultTheme', searchResultTheme.view);
 app.get('/searchResultThemeMap', searchResultThemeMap.view);
 app.get('/add', add.addLocationfromUser); //add new location from user's input
 //app.get('/singleLocationPage/:name',singleLocationPage.viewLocation);
-app.get('/location/:name',location.viewLocation);
-
+//app.get('/location/:name/:address/:likes/:tags/:description',location.viewLocation);
+app.get('/location/:name/:address/:likes/:tags',location.viewLocation);
 
 
 

@@ -3,7 +3,7 @@ exports.viewLocation = function(req,res){
 	var name = req.params.name;
 
 	//Location Description
-	var description = req.params.description;
+	//var description = req.params.description;
 
 	//Location Address
 	var address = req.params.address;
@@ -15,20 +15,20 @@ exports.viewLocation = function(req,res){
 	var likes = req.params.likes;
 
 	//Location Latitude
-	var latitude = req.params.latitude;
+	//var latitude = req.params.latitude;
 
 	//Location Longitude
-	var longitude = req.params.longitude;
+	//var longitude = req.params.longitude;
 
 	//Render Info
 	res.render('location',{
 		'locationName':name,
-		'locationDescription':description,
+		//'locationDescription':description,
 		'locationAddress':address,
 		'locationTags':tags,
 		'locationLikes':likes,
-		'locationLatitude':latitude,
-		'locationLongitude':longitude,
+		//'locationLatitude':latitude,
+		//'locationLongitude':longitude,
 	});
 
 }

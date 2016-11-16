@@ -2,10 +2,10 @@
     "locationArray": [
         {
             "name": "Potato Chip",
-            "description": "Hike on thin rock and explore",
-            "longitude": 26365,
-            "latitude": 2553,
-            "altitude": 2554,
+            "description": "Potato Chip Rock via Mt. Woodson Trail is a 6.9 mile heavily trafficked out and back trail located near Poway, CA that features a lake and is rated as moderate.",
+            "address": "Ramona, CA 92065",
+            "longitude": 33.0092674,
+            "latitude": -116.9742491,
             "tags": [
                 "portrait",
                 "landscape",
@@ -17,6 +17,7 @@
         {
             "name": "La Jolla Shores",
             "description": "Famous surfing spot",
+            "address": "test",            
             "longitude": 234,
             "latitude": 32425,
             "altitude": 245,
