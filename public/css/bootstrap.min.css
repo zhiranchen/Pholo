@@ -22,3 +22,8 @@
 
 
 body { padding-bottom: 100px; }
+
+#disqus_thread {
+	margin: 0 auto;
+	width: 50%;
+}
