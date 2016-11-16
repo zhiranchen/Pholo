@@ -151,8 +151,8 @@
             
         <div>
             <!-- Homepage title and tagline -->
-            <center><h1><b>Pholo</b></h1>
-            <p><i>"Explore tomorrow's trends today"</i></p>
+            <center><p style="font-size:40px"><b>Pholo</b></p>
+            <i><p style="font-size:20px">"Explore tomorrow's trends today"</i></p>
         </center>
         <div>
 
@@ -160,7 +160,9 @@
             <!-- Trending Now Text -->
             <span></span>
             <center>
-            <h3>Trending Now</h3>
+            <br>
+            <p style="font-family:Calibri"><p style="font-size:25px">Trending Now:</p></p>
+            <br>
             </center>
             <span></span>
         <div>
@@ -226,14 +228,16 @@
             -->
 
             {{#each locationArray}}
-            <div class="col-md-4 col-sm-6 thumb">
+            <div class="col-sm-6 thumb">
                 <div class="hovereffect ">
                     <img class="img-responsive" src="{{imageURL}}" alt="">
                         <div class="overlay">
-                            <h2><br>{{name}}</h2>
-                                <font color="white"><b>{{likes}} Likes</b></font>
                                 <br>
-                                <a href="location/{{name}}/{{address}}/{{likes}}/{{tags}}">Explore More</a>
+                                <br>
+                                <a href="location/{{name}}/{{address}}/{{likes}}/{{tags}}"><p style="font-size:18px">{{name}}</p>
+                                <br>
+                                <br>
+                                <p style="font-size:18px">More Information</p></a>
                         </div>
                 </div>
             </div>
