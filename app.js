@@ -64,11 +64,6 @@ app.get('/add', add.addLocationfromUser); //add new location from user's input
 //app.get('/location/:name/:address/:likes/:tags/:description',location.viewLocation);
 app.get('/location/:name/:address/:likes/:tags',location.viewLocation);
 
-
-
-app.listen(app.get('port'), function() {
-	console.log('Server listening');
-});
 /*
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
@@ -83,3 +78,25 @@ connect().use(serveStatic(__dirname)).listen(8080, function(){
     console.log('Server running on 8080...');
 });
 */
+
+app.get('*', function(req, res, next) {
+  var err = new Error();
+  err.status = 404;
+  next(err);
+});
+ 
+// handling 404 errors
+app.use(function(err, req, res, next) {
+  if(err.status !== 404) {
+    return next();
+  }
+
+	res.redirect('/index')    
+  //res.send(err.message || '** no unicorns here **');
+});
+
+
+
+app.listen(app.get('port'), function() {
+	console.log('Server listening');
+});
