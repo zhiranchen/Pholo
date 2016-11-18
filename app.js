@@ -26,6 +26,7 @@ var index = require('./routes/index');
 var map = require('./routes/map');
 var location = require('./routes/location');
 var add = require('./routes/add');
+var singleLocationPage = require('./routes/singleLocationPage');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -63,6 +64,7 @@ app.get('/add', add.addLocationfromUser); //add new location from user's input
 //app.get('/singleLocationPage/:name',singleLocationPage.viewLocation);
 //app.get('/location/:name/:address/:likes/:tags/:description',location.viewLocation);
 app.get('/location/:name/:address/:likes/:tags',location.viewLocation);
+app.get('/singleLocationPage/:name/:longitude/:altitude/:latitude/:likes',singleLocationPage.viewLocation);
 
 /*
 http.createServer(app).listen(app.get('port'), function(){
