@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google Analytics Content Experiment code -->
-<script>function utmx_section(){}function utmx(){}(function(){var
-k='134444606-0',d=document,l=d.location,c=d.cookie;
-if(l.search.indexOf('utm_expid='+k)>0)return;
-function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-</script><script>utmx('url','A/B');</script>
-<!-- End of Google Analytics Content Experiment code -->
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -82,7 +68,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
                         navigation</span> Menu <i class=
                         "fa fa-bars"></i></button> <a class=
                         "navbar-brand page-scroll" href="/index"><img src=
-                        "img/P.png"></a>
+                        "/img/P.png"></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -103,15 +89,48 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
                                     </div>
                                 </form>
                             </li>
+                            <li>
+                                <a aria-expanded="false" aria-haspopup="true"
+                                class="dropdown-toggle" data-toggle="dropdown"
+                                href="#" role="button">Submit<span class=
+                                "caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="/addLocation">New
+                                        Location</a>
+                                    </li>
+                                    <li>
+                                        <a href="/addPhoto">New Photo</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a aria-expanded="false" aria-haspopup="true"
+                                class="dropdown-toggle" data-toggle="dropdown"
+                                href="#" role="button">Settings <span class=
+                                "caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="/account">Account</a>
+                                    </li>
+                                    <li>
+                                        <a href="/help">Help</a>
+                                    </li>
+                                    <li class="divider" role="separator"></li>
+                                    <li>
+                                        <a href="/index">Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
                             -->
                             <li>
                                 <a href="/index"><b>Home</b></a>
                             </li>
                             <li>
-                                <a href="/map"><b>Map View</b></a>
+                                <a href="/searchResultThemeMap"><b>Map View</b></a>
                             </li>
                             <li>
-                                <a href="/addlocation"><b>Add Location</b></a>
+                                <a href="/addLocation"><b>Add Location</b></a>
                             </li>
                             <li>
                                 <a href="/help"><b>Help</b></a>
@@ -128,106 +147,95 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
     <!-- END HEADER -->
 
+
     
-            
+        <br />
         <div>
-            <!-- Homepage title and tagline -->
-            <center><p style="font-size:40px"><b>Pholo</b></p>
-            <i><p style="font-size:20px">"Explore tomorrow's trends today"</i></p>
-        </center>
-        <div>
-
-        <div>
-            <!-- Trending Now Text -->
-            <span></span>
             <center>
-            <br>
-            <p style="font-family:Calibri"><p style="font-size:25px">Trending Now:</p></p>
-            <br>
+            <h1>{{locationName}}</h1>
             </center>
-            <span></span>
-        <div>
-
-    <div class="container">
-        <div class="row">
-            <!--
-            <div class = "thumb" id="instafeed1"></div>
-            <div class = "thumb" id="instafeed2"></div>
-            <div class = "thumb" id="instafeed3"></div>
-            <div class = "thumb" id="instafeed4"></div>
-            -->
-
-            <!--
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb" >
-                <a class="thumbnail" href="searchResult.html"><img alt="" class=
-                "img-responsive" src="img/1.jpg"></a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#"><img alt="" class=
-                "img-responsive" src="img/2.jpg"></a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#"><img alt="" class=
-                "img-responsive" src="img/3.jpg"></a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#"><img alt="" class=
-                "img-responsive" src="img/4.jpg"></a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#"><img alt="" class=
-                "img-responsive" src="img/5.jpg"></a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#"><img alt="" class=
-                "img-responsive" src="img/6.jpg"></a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#"><img alt="" class=
-                "img-responsive" src="img/7.jpg"></a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#"><img alt="" class=
-                "img-responsive" src="img/8.jpg"></a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#"><img alt="" class=
-                "img-responsive" src="img/9.jpg"></a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#"><img alt="" class=
-                "img-responsive" src="img/10.jpg"></a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#"><img alt="" class=
-                "img-responsive" src="img/11.jpg"></a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#"><img alt="" class=
-                "img-responsive" src="img/12.jpg"></a>
-            </div>
-            -->
-
-            {{#each locationArray}}
-            <div class="col-sm-6 thumb">
-                <div class="hovereffect ">
-                    <img class="img-responsive" src="{{imageURL}}" alt="">
-                        <div class="overlay">
-                                <br>
-                                <br>
-                                <a href="location/{{name}}/{{address}}/{{likes}}/{{tags}}"><p style="font-size:18px">{{name}}</p>
-                                <br>
-                                <br>
-                                <p style="font-size:18px">More Information</p></a>
-                        </div>
-                </div>
-            </div>
-            {{/each}}
-
-
         </div>
-    </div>
- 
+
+    <!-- Search Result image-->
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+         <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="/img/1.jpg">
+            </div>
+
+            <div class="item">
+              <img src="http://luggageandlipstick.com/wp-content/uploads/2013/08/PotatoChipRock-254.jpg">
+            </div>
+
+            <div class="item">
+              <img src="https://littleparadiscocom.files.wordpress.com/2016/01/311.jpg">
+            </div>
+
+            <div class="item">
+              <img src="https://littleparadiscocom.files.wordpress.com/2016/01/4.jpg">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        </div>
+
+            <div class="search-result-description">
+                <center>
+                    <h2> Information </h2>
+                <!-- Search result description section -->
+                <div>
+                    <p class="distance"><b>Description</b>locationDescription}}</p>
+                </div>
+                <div>
+                    <p class="popularity"><b>Tags:</b>locationTags}}</p>
+                </div>
+                <div>
+                    <p class="mentions"><b>Likes:</b>{{locationLikes}}</p>
+                </div>  
+                <div>
+                    <p><b>Longitude</b> {{locationLongitude}}</p>
+                </div>  
+                <div>
+                    <p><b>Latitude</b> {{locationLatitude}}</p>
+                </div> 
+                <div>
+                    <p><b>Altitude</b> {{locationAltitude}}</p>
+                </div>   
+                </center>
+            </div>  
+            <br>
+            <!--
+            <div>
+                <center>
+                    <a id="addButton" href="/addPhoto" 
+                    class="btn btn-default" role="button">Add a New Photo</a>
+                </center>
+            </div>
+            -->
+        </div>
+    <br />
+
+
+
 
     <!-- BEGIN FOOTER -->
 
@@ -267,29 +275,11 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
             </center>
         </footer>
 
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
     </script> 
-
-    <script src="js/jquery-1.11.0.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-
-    <script src="js/bootstrap.min.js"</script>
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-87910504-1', 'auto');
-    ga('send', 'pageview');
-    ga('send','event','link','click');
-
-</script>
-
-
+    <script src="/js/bootstrap.min.js">
+    </script>
 </body>
 </html>

@@ -19,6 +19,7 @@
             "tags": "portrait, landscape, outdoors, pet-friendly",
             "imageURL": "/img/La Jolla Shores/1.jpg",
             "likes": 342
+
         },
         {
             "name": "Geisel Library",
@@ -29,6 +30,7 @@
             "tags": "portrait, landscape, indoors",
             "imageURL": "/img/Geisel Library/1.jpg",
             "likes": 126
+
         },
         {
             "name": "Black's Beach",
@@ -39,6 +41,7 @@
             "tags": "portrait, landscape, nude beach, outdoor, pet-friendly",
             "imageURL": "/img/Black's Beach/1.jpg",
             "likes": 286
+
         },
         {
             "name": "Scripps Pier",
@@ -49,6 +52,7 @@
             "tags": "portrait, landscape, beach, sunset",
             "imageURL": "/img/Scripps Pier/1.jpg",
             "likes": 354
+
         },
         {
             "name": "MCASD",
@@ -59,6 +63,7 @@
             "tags": "portrait, landscape, art, museum, hard parking",
             "imageURL": "/img/MCASD/1.jpg",
             "likes": 346
+
         },
         {
             "name": "Salk Institute",
@@ -69,6 +74,7 @@
             "tags": "portrait, landscape, grey, outdoor, sunset",
             "imageURL": "/img/Salk Institute/1.jpg",
             "likes": 313
+
         },
         {
             "name": "Del Mar Beach",
@@ -79,6 +85,7 @@
             "tags": "portrait, landscape, beach, outdoor, pet-friendly",
             "imageURL": "/img/Del Mar Beach/1.jpg",
             "likes": 226
+
         },
         {
             "name": "Liberty Public Market",
@@ -89,6 +96,7 @@
             "tags": "portrait, landscape, food, crowded, trendy",
             "imageURL": "/img/Liberty Public Market/1.jpg",
             "likes": 175
+
         }
     ],
     "_locals": {}
